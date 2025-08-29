@@ -14,21 +14,52 @@ class TestDataSeeder extends Seeder
 {
     public function run()
     {
-        // 外部キー制約を一時的に無効化
-        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        Schema::disableForeignKeyConstraints();
 
-        // 外部キーの依存順にdelete（truncateは使わない）
-        if (Schema::hasTable('business_likes')) {
-            DB::table('business_likes')->delete();
-        }
+    // ---- 子 → 親 の順に TRUNCATE ----
+    // いいね（コメント）
+    DB::table('business_comment_likes')->truncate();
+    DB::table('spot_comment_likes')->truncate();
+    DB::table('quest_comment_likes')->truncate();
 
-        DB::table('businesses')->delete();
-        DB::table('quests')->delete();
-        DB::table('spots')->delete();
-        DB::table('users')->delete();
+    // いいね（本体）
+    DB::table('spot_likes')->truncate();
+    DB::table('quest_likes')->truncate();
+    DB::table('business_likes')->truncate();
 
-        // 外部キー制約を元に戻す
-        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+    // コメント本体
+    DB::table('spot_comments')->truncate();
+    DB::table('quest_comments')->truncate();
+    DB::table('business_comments')->truncate();
+
+    // ログ/ビュー
+    DB::table('page_view_logs')->truncate();
+    DB::table('page_views')->truncate();
+
+    // 添付/写真/プロモ
+    DB::table('business_photos')->truncate();
+    DB::table('business_promotions')->truncate();
+
+    // 紐づく詳細情報
+    DB::table('business_details')->truncate();
+    DB::table('business_info')->truncate();
+    DB::table('business_info_category')->truncate();
+
+    // フォロー（ユーザー間の中間テーブル）
+    DB::table('follows')->truncate();
+
+    // メインリソース
+    DB::table('spots')->truncate();
+    DB::table('quests')->truncate();
+    DB::table('businesses')->truncate();
+
+    // FAQ（独立テーブル）
+    DB::table('faqs')->truncate();
+
+    // 最後に users（多くの外部キーの親）
+    DB::table('users')->truncate();
+
+    Schema::enableForeignKeyConstraints();
 
         // users
         DB::table('users')->insert([
