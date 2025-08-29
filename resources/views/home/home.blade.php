@@ -457,5 +457,5 @@
         </div>
     </div>
 @endsection
+<script src="{{ asset('js/home/home.js') }}"></script>
 
-@vite(['resources/js/home/home.js'])
