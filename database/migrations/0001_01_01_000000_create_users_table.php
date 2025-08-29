@@ -15,10 +15,23 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->LongText('avatar')->nullable();
+            $table->LongText('header')->nullable();
             $table->string('password');
-            $table->rememberToken();
+            $table->integer('role_id')->default(1)->comment('1:tourist 2:business');
+            $table->text('introduction')->nullable();
+            $table->string('website_url')->nullable();
+            $table->text('zip')->nullable();
+            $table->string('address')->nullable();
+            $table->string('phonenumber')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('x')->nullable();
+            $table->string('tiktok')->nullable();
+            $table->integer('official_certification')->default(1);
+            // $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {

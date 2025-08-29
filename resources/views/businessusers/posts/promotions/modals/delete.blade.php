@@ -1,4 +1,4 @@
-<div class="modal fade" id="delete-promotion">
+<div class="modal fade" id="delete-business_promotion{{$business_promotion->id}}">
     <div class="modal-dialog">
         <div class="modal-content border-danger">
             <div class="modal-header border-danger">
@@ -8,7 +8,7 @@
                 <p>Are you sure you want to delete this Promotion?</p>
             </div>
             <div class="modal-footer border-0">
-                <form action="#" method="post">
+                <form action="{{route('promotions.delete', $business_promotion->id)}}" method="post">
                     @csrf
                     @method('DELETE')
                     <button type="button" data-bs-dismiss="modal" class="btn btn-sm btn-outline-red">CANCEL</button>
