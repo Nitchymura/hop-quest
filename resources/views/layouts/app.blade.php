@@ -8,6 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>HopQuest | @yield('title')</title>
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('images/logo/favicon.png') }}" type="image/png">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
