@@ -17,7 +17,7 @@
     {{-- Header video --}}
     <div class="wrapper-header position-relative overflow-hidden d-flex align-items-center justify-content-center">
         <video autoplay muted loop playsinline class="header_video">
-            <source src="{{ asset('videos/header-video-1.mp4') }}" type="video/mp4">
+            <source src="{{ asset('videos/header-video-2.mp4') }}" type="video/mp4">
         </video>
     
         {{-- Header video's title --}}
