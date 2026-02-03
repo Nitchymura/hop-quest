@@ -59,7 +59,7 @@ class BusinessController extends Controller
             'photos.*' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5120',        
             'introduction' => 'required_if:official_certification,2|max:1000',
             'phonenumber' => 'required_if:official_certification,2|max:20',
-            'zip' => 'required_if:official_certification,2|max:7',
+            'zip' => 'required_if:official_certification,2|max:8',
             'address_1' => 'required_if:official_certification,2|max:255'
         ], [
             'introduction.required_if' => 'Required for official certification badge',
@@ -180,7 +180,7 @@ class BusinessController extends Controller
             'photos.*' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5120',        
             'introduction' => 'required_if:official_certification,2|max:1000',
             'phonenumber' => 'required_if:official_certification,2|max:20',
-            'zip' => 'required_if:official_certification,2|max:7',
+            'zip' => 'required_if:official_certification,2|max:8',
             'address_1' => 'required_if:official_certification,2|max:255'
         ], [
             'introduction.required_if' => 'Required for official certification badge',

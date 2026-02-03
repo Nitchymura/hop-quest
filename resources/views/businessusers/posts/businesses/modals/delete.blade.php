@@ -1,5 +1,5 @@
 <!-- DELETE MODAL -->
-<div class="modal fade" id="deleteModal{{ $comment->id }}">
+<div class="modal fade" id="deleteModal{{ $business->id }}">
     <div class="modal-dialog">
         <div class="modal-content border-danger">
             <div class="modal-header border-danger">
