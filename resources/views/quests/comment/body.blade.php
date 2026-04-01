@@ -91,6 +91,7 @@
                 <div class="col">
                     <div class="comment-actions d-flex justify-content-end gap-3">
                         <div class="comment-action-item">
+                            @auth
                             <form action="{{ route('questcomment.toggleLike', $comment->id) }}" method="POST" data-comment-id="{{ $comment->id }}" class="like-comment-form">
                                 
                                 @csrf
@@ -106,6 +107,7 @@
                                     {{ $comment->QuestCommentlikes->count() }}
                                 </span>
                             </button>
+                            @endauth
                         </div>
                     </div>
                 </div>     
@@ -117,4 +119,5 @@
         <h4 class="h4 text-center text-secondary">No comments yet</h4> 
     @endforelse  
 
-    @vite('resources/js/quest/comment/quest-comment.js')
+    {{-- @vite('resources/js/quest/comment/quest-comment.js') --}}
+    <script src="{{ asset('js/quest/quest-comment.js') }}"></script>
