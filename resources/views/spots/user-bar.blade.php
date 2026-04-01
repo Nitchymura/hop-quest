@@ -19,54 +19,56 @@
                         <div class="profile-name">{{ $spot->user->name }}</div>
 
                         @if ($spot->user->official_certification == 3)
-                            <img src="{{ asset('images/logo/official_personal.png') }}"
-                                class="official-personal-inline" alt="official-personal">
+                            <img src="{{ asset('images/logo/official_personal.png') }}" class="official-personal-inline"
+                                alt="official-personal">
                         @endif
                     </div>
                 </div>
 
-                @if ($spot->user->id !== Auth::user()->id && Auth::user()->role_id == 1)
-                    <div class="follow-area">
-                        @if ($spot->user->isFollowed())
-                            <form action="{{ route('delete.follow', $spot->user->id) }}" method="post">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-following btn-sm w-100">Following</button>
-                            </form>
-                        @else
-                            <form action="{{ route('store.follow', $spot->user->id) }}" method="post">
-                                @csrf
-                                <button type="submit" class="btn btn-follow btn-sm w-100">Follow</button>
-                            </form>
-                        @endif
-                    </div>
-                @endif
+                @auth
+                    @if ($spot->user->id !== Auth::user()->id && Auth::user()->role_id == 1)
+                        <div class="follow-area">
+                            @if ($spot->user->isFollowed())
+                                <form action="{{ route('delete.follow', $spot->user->id) }}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-following btn-sm w-100">Following</button>
+                                </form>
+                            @else
+                                <form action="{{ route('store.follow', $spot->user->id) }}" method="post">
+                                    @csrf
+                                    <button type="submit" class="btn btn-follow btn-sm w-100">Follow</button>
+                                </form>
+                            @endif
+                        </div>
+                    @endif
+                @endauth
 
                 <div class="sns-icons">
                     @if (!empty($spot->user->instagram))
-                        <a href="https://instagram.com/{{ $spot->user->instagram }}"
-                            class="text-decoration-none" target="_blank" rel="noopener">
+                        <a href="https://instagram.com/{{ $spot->user->instagram }}" class="text-decoration-none"
+                            target="_blank" rel="noopener">
                             <i class="fa-brands fa-instagram text-dark icon-md"></i>
                         </a>
                     @endif
 
                     @if (!empty($spot->user->facebook))
-                        <a href="https://facebook.com/{{ $spot->user->facebook }}"
-                            class="text-decoration-none" target="_blank" rel="noopener">
+                        <a href="https://facebook.com/{{ $spot->user->facebook }}" class="text-decoration-none"
+                            target="_blank" rel="noopener">
                             <i class="fa-brands fa-facebook text-dark icon-md"></i>
                         </a>
                     @endif
 
                     @if (!empty($spot->user->x))
-                        <a href="https://x.com/{{ $spot->user->x }}"
-                            class="text-decoration-none" target="_blank" rel="noopener">
+                        <a href="https://x.com/{{ $spot->user->x }}" class="text-decoration-none" target="_blank"
+                            rel="noopener">
                             <i class="fa-brands fa-x-twitter text-dark icon-md"></i>
                         </a>
                     @endif
 
                     @if (!empty($spot->user->tiktok))
-                        <a href="https://www.tiktok.com/@{{ $spot->user->tiktok }}"
-                            class="text-decoration-none" target="_blank" rel="noopener">
+                        <a href="https://www.tiktok.com/@{{ $spot - > user - > tiktok }}" class="text-decoration-none"
+                            target="_blank" rel="noopener">
                             <i class="fa-brands fa-tiktok text-dark icon-md"></i>
                         </a>
                     @endif

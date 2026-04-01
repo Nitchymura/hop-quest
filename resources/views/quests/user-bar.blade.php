@@ -24,7 +24,7 @@
                         @endif
                     </div>
                 </div>
-
+                @auth
                 @if ($quest_a->user->id !== Auth::user()->id && Auth::user()->role_id == 1)
                     <div class="follow-area">
                         @if ($quest_a->user->isFollowed())
@@ -41,6 +41,7 @@
                         @endif
                     </div>
                 @endif
+                @endauth
 
                 <div class="sns-icons">
                     @if (!empty($quest_a->user->instagram))

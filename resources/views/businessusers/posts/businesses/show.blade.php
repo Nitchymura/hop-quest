@@ -106,6 +106,7 @@
                             @endif
                         </div>
                         <!-- Followボタン -->
+                        @auth
                         @if ($business->user->id !== Auth::user()->id)
                             <div class="follow-area mt-3">
                                 @if ($business->user->isFollowed())
@@ -124,6 +125,7 @@
                                 @endif
                             </div>
                         @endif
+                        @endauth
                         <!-- 右側（SNSアイコン） -->
                         <div class="sns-icons d-flex align-items-center">
                             @if (!empty($business->user->instagram))
