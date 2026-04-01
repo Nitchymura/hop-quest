@@ -240,8 +240,14 @@
 
     {{-- @vite(['resources/js/quest/view-quest.js']) --}}
     <script src="{{ asset('js/quest/view-quest.js') }}"></script>
-    <script type="text/javascript" src="{{ Vite::asset('resources/js/quest/map.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ Vite::asset('resources/js/quest/map.js') }}"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}&callback=initMap&loading=async"
-        async defer></script>
+        async defer></script> --}}
+
+    {{-- view Google Maps --}}
+    <script src="{{ asset('js/quest/show-map.js') }}"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key={{ config('services.google_maps.key') }}&libraries=places&callback=initMap">
+    </script>
 @endsection
