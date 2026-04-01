@@ -44,10 +44,10 @@
         </div>
 
         <div class="card-body content-lg">  
-            <div class="row mb-3">
+            <div class="row mb-3 g-1 align-items-start">
                 @if (Request::is('home/posts/all*') || Request::is('home/posts/followings*'))
                 {{-- Category --}}
-                    <div class="col-md-auto col-sm-12 p-0">
+                    <div class="col-12 col-md-auto p-0">
                         <h5 class="card-subtitle">Category: 
                             @if($post['tab_id']==1)
                                 <strong>Spot</strong>
@@ -63,7 +63,7 @@
                 @endif
                 
                 {{-- Postdate --}}
-                <div class="col-md-auto col-sm-12 pe-0 ms-auto">
+                <div class="col-12 col-md-auto p-0 ms-md-auto">
                     <h5 class="card-subtitle">{{ $post['created_at']->format('H:i, M d Y')}}</h5>
                 </div>
             </div>                
@@ -89,9 +89,9 @@
                 </div>
             </div>
             {{-- Icon & Name & Official mark --}}
-            <div class="row align-items-center personal_space">
+            <div class="row align-items-center personal_space g-2">
                 {{-- User Icon --}}
-                <div class="col-md-auto col-sm-2 my-auto p-0">                   
+                <div class="col-auto p-0">                   
                     <button class="btn">
                         <a href="{{ route('profile.header', $post['user_id'] )}}" class="text-decoration-none h5 d-flex align-items-center">
                             @if($post['avatar'])
@@ -104,7 +104,7 @@
                 </div>
             
                 {{-- User Name --}}
-                <div class="col-md-auto col-sm-6 ms-2 p-0">
+                <div class="col-auto p-0 me-1">
                     <a href="{{ route('profile.header', $post['user_id']) }}" class="text-decoration-none h5 d-inline align-items-center">
                         <p class="username h4 my-auto" id="username">{{ $post['user_name'] }}</p></a>                 
                 </div>
@@ -120,7 +120,7 @@
                 </script>
 
                 {{-- User official mark --}}
-                <div class="col-md-auto col-sm-1 mt-1 p-1">
+                <div class="col-auto p-0">
                     @if($post['user_official_certification'] == 3)
                         <img src="{{ asset('images/logo/official_personal.png')}}" class="official-personal d-inline ms-0" alt="official-personal">
                     @else
@@ -130,17 +130,17 @@
                 {{-- Follow Button --}}
                 @auth
                     @if($post['user_id'] != Auth::user()->id && Auth::user()->role_id == 1)
-                        <div class="col-md-auto col-sm ms-auto p-0 mt-3">
+                        <div class="col-12 col-md-auto p-0 mt-2 mt-md-0 ms-md-auto">
                             @if ($post['user']->isFollowed())
                                 <form method="POST" action="{{ route('delete.follow', $post['user']->id) }}">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn-following mb-2 w-100">Following</button>
+                                    <button type="submit" class="btn-following mt-3 w-100">Following</button>
                                 </form>
                             @else
                                 <form method="POST" action="{{ route('store.follow', $post['user']->id) }}">
                                     @csrf
-                                    <button type="submit" class="btn-follow mb-2 w-100">Follow</button>
+                                    <button type="submit" class="btn-follow mt-3 w-100">Follow</button>
                                 </form>
                             @endif
                         </div> 
@@ -154,8 +154,8 @@
             </div>
             
             {{-- Heart icon & Like function --}}
-            <div class="row align-items-center ">
-                <div class="col-1 ms-2 p-0 mt-3">
+            <div class="d-flex align-items-center flex-wrap gap-2 mt-3 post-stats">
+                <div class="d-flex align-items-center gap-1 mt-3">
                     {{-- like/heart button --}}
                     @if($post['is_liked'])
                         @php
@@ -182,7 +182,7 @@
                     @endif
                 </div>
 
-                <div class="col-2 ms-1 px-2">
+                <div class="d-flex align-items-center gap-1">
                     <button class="dropdown-item text-dark" data-bs-toggle="modal" data-bs-target="#">
                         <span>{{ $post['likes_count'] }}</span>
                     </button>
@@ -190,22 +190,22 @@
                 {{-- Modal for displaying all users who liked owner of post--}}
                                                                 
                 {{-- Comment icon & Number of comments --}}
-                <div class="col-1 ms-3 p-0">
+                <div class="d-flex align-items-center gap-1">
                     <div>
                         <i class="fa-regular fa-comment"></i>
                     </div>
                 </div>
-                <div class="col-2 ms-1 px-0">
+                <div class="d-flex align-items-center gap-1">
                     <span>{{ $post['comments_count'] }}</span>
                 </div>
 
                 {{-- Number of viewers --}}
-                <div class="col-1 ms-3 p-0">
+                <div class="d-flex align-items-center gap-1">
                     <div>
                         <img src="{{ asset('images/chart.png') }}" alt="">
                     </div>
                 </div>
-                <div class="col-2 ms-1 px-0">
+                <div class="d-flex align-items-center gap-1">
                     <button class="dropdown-item text-dark">
                         <span>{{ $post['views_sum'] ?? 0 }}</span>
                     </button>

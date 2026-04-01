@@ -3,47 +3,47 @@
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
 @endsection
 
-<div class="card p-3">
+<div class="card p-3 h-100">
     <div class="card-header border-0 bg-light p-0 overflow-hidden">
         <a href="{{ route('promotions.show', $post->id) }}">
             <img src="{{ $post->image }}" alt="{{ $post->title }}" class="post-image">
         </a>
     </div>
-    <div class="card-body">  
-        <div class="row mb-3">
-            <!-- Postdate -->
-            <div class="col-md-auto col-sm-12 pe-0 ms-auto">
-                @if($post->updated_at)
-                    <h5 class="card-subtitle">{{ $post->updated_at->format('H:i, M d Y')}}</h5>
-                @else
-                    <h5 class="card-subtitle">{{ $post->created_at->format('H:i, M d Y')}}</h5>
-                @endif
+
+    <div class="card-body d-flex flex-column">
+
+        <!-- 日付 -->
+        <div class="mb-2 text-end">
+            @if($post->updated_at)
+                <small class="text-muted">
+                    {{ $post->updated_at->format('H:i, M d Y') }}
+                </small>
+            @else
+                <small class="text-muted">
+                    {{ $post->created_at->format('H:i, M d Y') }}
+                </small>
+            @endif
+        </div>
+
+        <!-- タイトル -->
+        <h5 class="fw-bold mb-2">{{ $post->title }}</h5>
+
+        <!-- 期間 -->
+        @if($post->promotion_start)
+            <div class="mb-2">
+                <small class="fw-semibold">
+                    {{ date('M d Y', strtotime($post->promotion_start)) }}
+                    ~
+                    {{ date('M d Y', strtotime($post->promotion_end)) }}
+                </small>
             </div>
-        </div>                
+        @endif
 
-            
-        <!-- Title -->
-        <div class="row mb-1">
-            <h4 class="card-title text-dark fw-bold pb-2">{{ $post->title }}</h4>
-        </div>
+        <!-- 説明 -->
+        <p class="card_description flex-grow-1">
+            {{ $post->introduction }}
+        </p>
 
-        <!-- Duration -->
-        <div class="row">
-            <div class="col p-0">
-                @if($post->promotion_start)
-                    <h5 class="fw-bold">{{date('M d Y', strtotime($post->promotion_start))}} ~ {{date('M d Y', strtotime($post->promotion_end))}}</h5>
-                @endif
-            </div>  
-        </div> 
-        
-        {{-- Description of posts --}}
-        <div class="row">
-            <div class="col p-0">
-                <p class="card_description">
-                    {{ $post->introduction}}
-                </p>
-            </div>    
-        </div>
     </div>
 </div>
 

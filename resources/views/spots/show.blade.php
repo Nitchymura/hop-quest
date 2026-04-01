@@ -11,7 +11,7 @@
         <meta name="auth-user-id" content="{{ Auth::check() ? Auth::id() : '' }}">
 
     <div class="container-fluid pt-5 d-flex justify-content-center">
-        <div class="col-8 col-md-9">
+        <div class="col-11">
 
             <!-- Main Image Section -->
             <section class="main-image-section">
@@ -23,7 +23,7 @@
                     <div class="col-auto main-title ">
                         {{ $spot->title }}
                     </div>
-                    <div class="icon-container position-absolute d-flex align-items-center mt-3 ms-5">
+                    <div class="icon-container d-flex align-items-center">
                         <!-- アイコン（ハート） -->
                         <div class="me-2 mt-3">
                             @if($spot->isLiked())                            

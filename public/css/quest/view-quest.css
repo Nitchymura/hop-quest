@@ -10,13 +10,14 @@
     opacity: 1;
     transform: translateY(0);
 }
+
 /* ===========================================CONFIRM=========================================== */
 
-#agenda-list ul li{
+#agenda-list ul li {
     font-size: 1.2rem;
 }
 
-.daytag{
+.daytag {
     font-size: 5rem;
 }
 
@@ -29,9 +30,12 @@
 /* Top Button */
 .top-button-container {
     position: fixed;
-    bottom: 1.5rem;  /* 画面下からの距離 */
-    right: 1.5rem;   /* 画面右からの距離 */
-    z-index: 9999; /* 他の要素より上に表示 */
+    bottom: 1.5rem;
+    /* 画面下からの距離 */
+    right: 1.5rem;
+    /* 画面右からの距離 */
+    z-index: 9999;
+    /* 他の要素より上に表示 */
 }
 
 .top-button {
@@ -39,20 +43,23 @@
     border: 1px solid navy;
     padding: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 50%; /* ✅ 完全な円にする */
-    width: 70px;  /* ✅ 幅と高さを揃える */
-    height: 70px; /* ✅ 幅と高さを揃える */
+    border-radius: 50%;
+    /* ✅ 完全な円にする */
+    width: 70px;
+    /* ✅ 幅と高さを揃える */
+    height: 70px;
+    /* ✅ 幅と高さを揃える */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.fs-8{
+.fs-8 {
     font-size: 0.6rem;
 }
 
-.fa-solid:hover{
-    transform: scale(1.1, 1.1); 
+.fa-solid:hover {
+    transform: scale(1.1, 1.1);
 }
 
 #quest-body-container {
@@ -66,30 +73,37 @@
     overflow-y: auto;
 }
 
-.icon-mmd{
-    font-size: 2.8125rem;;
+.icon-mmd {
+    font-size: 2.8125rem;
+    ;
 }
 
 /* BORDER */
 
-.border-quest-red{
+.border-quest-red {
     border: 3px solid #D24848 !important;
 }
+
 .border-quest-navy {
     border: 3px solid #3B3B6B !important;
 }
+
 .border-quest-green {
     border: 3px solid #66BFBF !important;
 }
+
 .border-quest-Blue {
     border: 3px solid #4496E3 !important;
-    }
+}
 
-    /* -----------------------Scroll Bar----------------------- */
+/* -----------------------Scroll Bar----------------------- */
 .spot-description-container {
-    max-height: 100%; /* 初期状態では高さ制限なし */
-    overflow-y: hidden; /* スクロールを非表示にする（JSで適用） */
-    padding-right: 10px; /* スクロールバーが表示された際のレイアウト調整 */
+    max-height: 100%;
+    /* 初期状態では高さ制限なし */
+    overflow-y: hidden;
+    /* スクロールを非表示にする（JSで適用） */
+    padding-right: 10px;
+    /* スクロールバーが表示された際のレイアウト調整 */
 }
 
 .spot-description {
@@ -100,14 +114,15 @@
     min-height: 20rem;
 }
 
-.spot-image-container{
+.spot-image-container {
     display: flex;
     flex-direction: column;
 }
 
 #day-template .row.px-0 {
     display: flex;
-    align-items: stretch; /* すべての子要素の高さを揃える */
+    align-items: stretch;
+    /* すべての子要素の高さを揃える */
 }
 
 
@@ -119,31 +134,38 @@
 
 /* スクロールバーのスタイル */
 .spot-description-container {
-    max-height: 100%; /* 初期状態では高さ制限なし */
-    overflow-y: hidden; /* スクロールを非表示にする（JSで適用） */
-    padding-right: 15px; /* スクロールバーが表示された際のレイアウト調整 */
+    max-height: 100%;
+    /* 初期状態では高さ制限なし */
+    overflow-y: hidden;
+    /* スクロールを非表示にする（JSで適用） */
+    padding-right: 15px;
+    /* スクロールバーが表示された際のレイアウト調整 */
 }
 
 .spot-description {
     overflow-y: auto;
-    overflow-x: hidden; /* ← 横スクロールは出さない */
+    overflow-x: hidden;
+    /* ← 横スクロールは出さない */
     padding: 0;
     flex-grow: 1;
     max-height: 100%;
     min-height: 20rem;
 
-    word-wrap: break-word;     /* 長い単語も折り返す */
-    white-space: pre-wrap;     /* 改行と自動折り返しを両立 */
+    word-wrap: break-word;
+    /* 長い単語も折り返す */
+    white-space: pre-wrap;
+    /* 改行と自動折り返しを両立 */
 }
 
-.spot-image-container{
+.spot-image-container {
     display: flex;
     flex-direction: column;
 }
 
 #day-template .row.px-0 {
     display: flex;
-    align-items: stretch; /* すべての子要素の高さを揃える */
+    align-items: stretch;
+    /* すべての子要素の高さを揃える */
 }
 
 
@@ -174,45 +196,48 @@
 
 /* MAP */
 #map {
-    height: 500px;  /* ← これ絶対必要 */
+    height: 500px;
+    /* ← これ絶対必要 */
     width: 100%;
 }
 
-.official-badge{
+.official-badge {
     position: absolute;
-    top: -3rem; 
-    left: -3rem; 
+    top: -3rem;
+    left: -3rem;
     z-index: 10;
 }
 
-.official-badge-xl{
+.official-badge-xl {
     position: absolute;
-    top: -2rem; 
-    left: -2rem; 
+    top: -2rem;
+    left: -2rem;
     z-index: 10;
 }
 
 .modal {
-  z-index: 1055 !important; /* Bootstrapの標準より上 */
+    z-index: 1055 !important;
+    /* Bootstrapの標準より上 */
 }
 
 .modal-backdrop {
-  z-index: 1050 !important;
+    z-index: 1050 !important;
 }
 
 body.modal-open {
-  overflow: hidden; /* 背景スクロール防止 */
+    overflow: hidden;
+    /* 背景スクロール防止 */
 }
 
-.fa-heart{
+.fa-heart {
     font-size: 2rem;
 }
 
-.bg-quest-blue{
+.bg-quest-blue {
     background-color: #B4D5F4;
 }
 
-.bg-quest-green{
+.bg-quest-green {
     background-color: #C2E5E5;
 }
 
@@ -246,7 +271,8 @@ body.modal-open {
 }
 
 .like-disabled {
-    pointer-events: none;   /* クリック不可 */
+    pointer-events: none;
+    /* クリック不可 */
     cursor: default;
 }
 
@@ -264,7 +290,7 @@ body.modal-open {
     background-color: #f5f5f5;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .main-image {
@@ -280,7 +306,7 @@ body.modal-open {
     left: 30px;
     font-size: 2.5rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .main-subtitle {
@@ -289,7 +315,7 @@ body.modal-open {
     left: 30px;
     font-size: 1.2rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .post-dates {
@@ -298,7 +324,7 @@ body.modal-open {
     right: 30px;
     font-size: 2rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .event-dates {
@@ -307,7 +333,7 @@ body.modal-open {
     left: 30px;
     font-size: 1rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .icon-container {
@@ -316,33 +342,220 @@ body.modal-open {
     right: 30px;
     /* font-size: 2.3rem; */
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .icon-container .icons-in-image {
     font-size: 2rem;
-    color:white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* FOR HEART, STAR ,*/
 .icon-container .fa-regular.fa-heart {
     font-size: 2rem;
-    color:white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .icon-container .fa-solid.fa-heart {
     font-size: 2rem;
     color: #D24848;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.icon-container .fa-heart :hover{
+.icon-container .fa-heart :hover {
     color: #D24848;
-    transform: scale(1.2, 1.2); 
+    transform: scale(1.2, 1.2);
 }
 
+
+.profile-container {
+    width: 100%;
+    max-width: 1400px;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* ===== Quest main image responsive ===== */
+.main-image-wrapper {
+    position: relative;
+}
+
+.main-image-wrapper img.body-image,
+.main-image-wrapper .main-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+    .main-image-wrapper {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .main-image-wrapper img.body-image,
+    .main-image-wrapper .main-image {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 12px 12px 0 0;
+    }
+
+    /* 画像上の絶対配置を解除して、下に積む */
+    .main-title,
+    .main-subtitle,
+    .icon-container,
+    .event-dates,
+    .post-dates {
+        position: static !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        margin: 0;
+        text-shadow: none;
+        color: #222;
+    }
+
+    .main-title {
+        display: block;
+        padding: 1rem 1rem 0.25rem;
+        font-size: 1.7rem;
+        line-height: 1.25;
+        font-weight: 700;
+    }
+
+    .main-subtitle {
+        display: block;
+        padding: 0 1rem 0.5rem;
+        font-size: 1rem;
+        line-height: 1.4;
+        color: #555;
+    }
+
+    .main-subtitle h4 {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .icon-container {
+        display: flex !important;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0 1rem 0.75rem;
+        color: #333;
+    }
+
+    .icon-container .icons-in-image {
+        font-size: 1rem;
+        color: #333;
+        text-shadow: none;
+    }
+
+    .icon-container .fa-regular.fa-heart {
+        font-size: 1.4rem;
+        color: #333;
+        text-shadow: none;
+    }
+
+    .icon-container .fa-solid.fa-heart {
+        font-size: 1.4rem;
+        color: #D24848;
+        text-shadow: none;
+    }
+
+    .icon-container .fa-regular.fa-comment,
+    .icon-container .fa-solid.fa-chart-simple {
+        font-size: 1.2rem;
+        color: #333;
+        text-shadow: none;
+    }
+
+    .event-dates {
+        padding: 0 1rem 0.25rem;
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    .event-dates h4 {
+        margin: 0;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    .post-dates {
+        padding: 0 1rem 1rem;
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+    .post-dates h5 {
+        margin: 0;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    /* Bootstrapの余計なmarginを打ち消す */
+    .icon-container.mt-3,
+    .icon-container.ms-5 {
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    /* User barまわり */
+    .profile-container {
+        padding: 1rem;
+    }
+
+    /* Agenda / Map を縦並び */
+    #agenda-list,
+    #agenda-list+.col-md-6 {
+        width: 100%;
+    }
+
+    #map {
+        height: 320px !important;
+    }
+
+    /* DAY内の画像と本文も縦並び */
+    .spot-entry .row {
+        row-gap: 1rem;
+    }
+
+    .spot-description {
+        min-height: auto;
+    }
+
+    .day-number {
+        padding: 1rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .spot-name {
+        font-size: 1.25rem;
+    }
+}
+
+/* ===== Quest user bar ===== */
+.profile-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
 
 .profile-container {
     width: 100%;
@@ -353,9 +566,101 @@ body.modal-open {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.profile-header {
+.profile-left {
     width: 100%;
+}
+
+.profile-main {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.profile-user {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 0;
+}
+
+.profile-name-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #222;
+}
+
+.official-personal-inline {
+    width: 1.1rem;
+    height: 1.1rem;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.follow-area {
+    min-width: 140px;
+}
+
+.sns-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.sns-icons a {
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+}
+
+@media (max-width: 767.98px) {
+    .profile-container {
+        padding: 1rem;
+    }
+
+    .profile-main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .profile-user {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile-name-badge {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .profile-name {
+        font-size: 1.2rem;
+    }
+
+    .follow-area {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .follow-area .btn-follow,
+    .follow-area .btn-following {
+        width: 100%;
+    }
+
+    .sns-icons {
+        justify-content: center;
+    }
 }

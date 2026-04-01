@@ -37,7 +37,7 @@
                             <i class="fa-solid fa-trash color-red"></i>
                         </button>
                         {{-- Include Delete Modal --}}
-                        @include('businessusers.posts.businesses.modals.delete', ['comment' => $comment, 'business' => $business])
+                        @include('spots.comment.modals.delete', ['comment' => $comment, 'spot' => $spot])
                     @endif
                 @endauth
 

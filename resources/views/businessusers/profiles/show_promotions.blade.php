@@ -2,7 +2,7 @@
     <div class="row mb-1">
         @forelse($business_promotions as $post)
             @if(!$post['is_trashed'] || (Auth::check() && $post['user_id'] == Auth::id()))
-                <div class="col-lg-4 col-md-6 col-sm">
+                <div class="col-12 col-md-6 col-xl-4 mb-4">
                     @include('businessusers.profiles.post-body-profile')
                 </div>
             @endif

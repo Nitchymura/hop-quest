@@ -8,8 +8,8 @@
 @include('home.posts.post-header')
 
     @auth
-        <div class="mt-4 mb-5 row justify-content-center">
-            <div class="col-8 mb-5 ">
+<div class="mt-4 mb-5 row justify-content-center">
+    <div class="col-12 col-lg-10 col-xl-8 mb-5">
                 <div class="col-2 ms-auto dropdown">
                     <form method="GET" action="{{ route('posts.followings') }}">
                         <select name="sort" onchange="this.form.submit()" class="form-control">
@@ -24,7 +24,7 @@
                 </div> 
                 <div class="row mb-3">
                 @forelse($all_followings as $post)
-                    <div class="col-lg-4 col-md-6 col-sm">
+                    <div class="col-12 col-md-6 col-xl-4 mb-4">
                         @include('home.posts.post-body')
                     </div>         
                 @empty

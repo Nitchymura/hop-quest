@@ -1,28 +1,28 @@
-body{
+body {
     /* Raleway regular  */
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size:  1rem;
+    font-size: 1rem;
 }
 
 /* ---------------FONT - POPPINS-------------- */
 
-.poppins-regular{
+.poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-  }
+}
 
 .poppins-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-  }
+}
 
 .poppins-bold {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-  }
+}
 
 /* ---------------FONT - Raleway--------------- */
 
@@ -30,58 +30,58 @@ body{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-  }
+}
 
 .raleway-semibold {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-  }
+}
 
 .raleway-bold {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
-  }
+}
 
 /* ---------------ERROR MESSAGE--------------- */
-.xsmall{
+.xsmall {
     font-size: 0.75rem;
 }
 
 /* ---------------Header--------------- */
-h1{
+h1 {
     font-family: "Poppins", sans-serif;
     font-size: 4rem;
 }
 
-h2{
+h2 {
     font-family: "Poppins", sans-serif;
     font-size: 3rem;
 }
 
-h3{
+h3 {
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
 }
 
-h4{
+h4 {
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
 }
 
-h5{
+h5 {
     font-family: "Poppins", sans-serif;
     font-size: 1.125rem;
 }
 
-h6{
+h6 {
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
 }
 
 /* ---------------FORM--------------- */
-.form-label{
+.form-label {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -90,7 +90,7 @@ h6{
     margin: 0 0.5px;
 }
 
-.input-box{
+.input-box {
     display: block;
     width: 100%;
     padding: 0.375rem 0.75rem;
@@ -105,7 +105,7 @@ h6{
     height: calc(2.25rem + 2px);
 }
 
-.input-box::placeholder{
+.input-box::placeholder {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -114,7 +114,7 @@ h6{
     opacity: 70%;
 }
 
-.text-area{
+.text-area {
     display: block;
     width: 100%;
     padding: 0.375rem 0.75rem;
@@ -128,7 +128,7 @@ h6{
     height: auto;
 }
 
-.text-area::placeholder{
+.text-area::placeholder {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -138,107 +138,109 @@ h6{
 }
 
 /* --------------- COLOR--------------- */
-.color-red{
-    color: #D24848;    
+.color-red {
+    color: #D24848;
 }
 
-.color-Blue{
-    color:  #4496E3;
+.color-Blue {
+    color: #4496E3;
 }
 
-.color-green{
+.color-green {
     color: #66BFBF;
 }
 
-.color-navy{
-    color:  #3B3B6B;
+.color-navy {
+    color: #3B3B6B;
 }
 
-.color-yellow{
-    color:  #FFBE0C;
+.color-yellow {
+    color: #FFBE0C;
 }
 
 /* ---------------BACKGROUND--------------- */
-.bg-blue{
+.bg-blue {
     background-color: #B4D5F4;
     min-height: 100vh;
     width: 100vw;
 }
 
-.bg-green{
+.bg-green {
     background-color: #C2E5E5;
     min-height: 100vh;
     width: 100vw;
 }
 
-.bg-navy{
+.bg-navy {
     background-color: #3B3B6B;
     min-height: 100vh;
     width: 100vw;
 }
 
-.bg-yellow{
+.bg-yellow {
     background-color: #F8F0DB;
     min-height: 100vh;
     width: 100vw;
 }
 
 /* ---------------border--------------- */
-.border-red{
+.border-red {
     border: 1px solid #D24848;
 }
 
-.border-green{
+.border-green {
     border: 1px solid #C2E5E5;
 }
 
-.border-navy{
+.border-navy {
     border: 1px solid #3B3B6B;
 }
+
 /* ---------------AVATAR--------------- */
 
 /* for admin list*/
-.avatar-xxs{
+.avatar-xxs {
     height: 1.5rem;
     width: 1.5rem;
     object-fit: cover;
 }
 
 /* for body*/
-.avatar-xs{
+.avatar-xs {
     height: 1.875rem;
     width: 1.875rem;
     object-fit: cover;
 }
 
 /* for Username xsmall  */
-.avatar-sm{
+.avatar-sm {
     height: 2.8125rem;
     width: 2.8125rem;
     object-fit: cover;
 }
 
 /* for Username  */
-.avatar-md{
+.avatar-md {
     height: 3.75rem;
     width: 3.75rem;
     object-fit: cover;
 }
 
 /* for Tourist Profile  */
-.avatar-lg{
+.avatar-lg {
     height: 8.25rem;
     width: 8.25rem;
     object-fit: cover;
 }
 
 /* for Business Profile */
-.avatar-xl{
+.avatar-xl {
     height: 6rem;
     width: 6rem;
     object-fit: cover;
 }
-.avatar-xxl{
+
+.avatar-xxl {
     height: 10rem;
     width: 10rem;
     object-fit: cover;
@@ -247,30 +249,31 @@ h6{
 /* ---------------PROFILE ICON--------------- */
 
 /* for body*/
-.profile-xs{
+.profile-xs {
     font-size: 1.875rem;
 }
 
 /* for Username xsmall  */
-.profile-sm{
+.profile-sm {
     font-size: 2.8125rem;
 }
 
 /* for Username  */
-.profile-md{
+.profile-md {
     font-size: 3.75rem;
 }
 
 /* for Tourist Profile  */
-.profile-lg{
+.profile-lg {
     font-size: 8.25rem;
 }
 
 /* for Business Profile */
-.profile-xl{
+.profile-xl {
     font-size: 6rem;
 }
-.profile-xxl{
+
+.profile-xxl {
     font-size: 10rem;
 }
 
@@ -278,66 +281,66 @@ h6{
 /* ---------------ICON--------------- */
 
 /* FOR COMMENT, VIEW etc  */
-.icon-sm{
+.icon-sm {
     font-size: 1.25rem;
 }
 
 /* FOR HEART, STAR ,*/
-.fa-heart{
+.fa-heart {
     font-size: 1.25rem;
 }
 
-.fa-heart:hover{
+.fa-heart:hover {
     color: #D24848;
-    transform: scale(1.2, 1.2); 
+    transform: scale(1.2, 1.2);
 }
 
 /* FOR SNS ICON */
-.icon-md{
+.icon-md {
     font-size: 2.1875rem;
 }
 
-.icon-lg{
+.icon-lg {
     font-size: 4.5rem;
 }
 
-.icon-xl{
+.icon-xl {
     font-size: 6rem;
 }
 
-.icon-xxl{
+.icon-xxl {
     font-size: 7.5rem;
 }
 
 /* ---------------IMAGE--------------- */
-.img-sm{
-    height:6rem;
-    width:9rem;
-    object-fit:cover;
+.img-sm {
+    height: 6rem;
+    width: 9rem;
+    object-fit: cover;
 }
 
-.img-lg{
-    height:8rem;
-    width:12rem;
-    object-fit:cover;
+.img-lg {
+    height: 8rem;
+    width: 12rem;
+    object-fit: cover;
 }
 
-.img-photo{
-    height:16rem;
-    width:24rem;
-    object-fit:cover;
+.img-photo {
+    height: 16rem;
+    width: 24rem;
+    object-fit: cover;
 }
 
-.img-xl{
-    height:24rem;
-    width:36rem;
-    object-fit:cover;
+.img-xl {
+    height: 24rem;
+    width: 36rem;
+    object-fit: cover;
 }
 
 /* ---------------BUTTON--------------- */
 
 /* FOLLOW */
-.btn-follow{
+.btn-follow {
     background-color: #4496E3;
     color: white;
     border: solid 2px #4496E3;
@@ -346,14 +349,14 @@ h6{
     font-size: 1rem;
 }
 
-.btn-follow:hover{
+.btn-follow:hover {
     background-color: #4496E3;
     color: white;
     border: solid 2px #326a9f;
 }
 
 /* FOLLOWING, UNFOLLOW */
-.btn-following{
+.btn-following {
     background-color: white;
     color: #4496E3;
     border: solid 2px #4496E3;
@@ -363,14 +366,14 @@ h6{
 }
 
 
-.btn-following:hover{
+.btn-following:hover {
     background-color: white;
     color: #4496E3;
     border: solid 2px white;
 }
 
 /* red  */
-.btn-red{
+.btn-red {
     background-color: #D24848;
     color: white;
     font-weight: bold;
@@ -380,14 +383,14 @@ h6{
     text-transform: uppercase;
 }
 
-.btn-red:hover{
+.btn-red:hover {
     background-color: #FFDFDF;
     border: solid 2px #FFDFDF;
     color: #D24848
 }
 
 /* outline red  */
-.btn-outline-red{
+.btn-outline-red {
     background-color: white;
     color: #D24848;
     font-weight: bold;
@@ -397,13 +400,13 @@ h6{
     transition: all .5s;
 }
 
-.btn-outline-red:hover{
+.btn-outline-red:hover {
     background-color: #FFDFDF;
     border: solid 2px #FFDFDF;
     color: #D24848;
 }
 
-.delete-avatar{
+.delete-avatar {
     background: none;
     border: none;
     padding: 0;
@@ -414,7 +417,7 @@ h6{
 }
 
 /* navy */
-.btn-navy{
+.btn-navy {
     background-color: #3B3B6B;
     color: white;
     font-weight: bold;
@@ -425,14 +428,14 @@ h6{
     transition: all .5s;
 }
 
-.btn-navy:hover{
+.btn-navy:hover {
     background-color: #CBD9FF;
     border: solid 2px #CBD9FF;
     color: #161672;
 }
 
 /* outline navy */
-.btn-outline-navy{
+.btn-outline-navy {
     background-color: white;
     color: #3B3B6B;
     font-weight: bold;
@@ -443,14 +446,14 @@ h6{
     transition: all .5s;
 }
 
-.btn-outline-navy:hover{
+.btn-outline-navy:hover {
     background-color: #CBD9FF;
     border: solid 2px #CBD9FF;
     color: #3B3B6B;
 }
 
 /* green  */
-.btn-green{
+.btn-green {
     background-color: #66BFBF;
     color: white;
     font-weight: bold;
@@ -461,14 +464,14 @@ h6{
     transition: all .5s;
 }
 
-.btn-green:hover{
+.btn-green:hover {
     background-color: #BFE8E8;
     border: solid 2px #BFE8E8;
     color: #007F7F;
 }
 
 /* outline green  */
-.btn-outline-green{
+.btn-outline-green {
     background-color: white;
     color: #66BFBF;
     font-weight: bold;
@@ -479,7 +482,7 @@ h6{
     transition: all .5s;
 }
 
-.btn-outline-green:hover{
+.btn-outline-green:hover {
     background-color: #BFE8E8;
     color: #007F7F;
     border: solid 2px #BFE8E8;
@@ -487,7 +490,7 @@ h6{
 }
 
 /* blue */
-.btn-blue{
+.btn-blue {
     background-color: #CBD9FF;
     color: #3B3B6B;
     font-weight: bold;
@@ -498,7 +501,7 @@ h6{
     transition: all .5s;
 }
 
-.btn-blue:hover{
+.btn-blue:hover {
     background-color: #3B3B6B;
     color: white;
     border: solid 2px #3B3B6B;
@@ -506,11 +509,11 @@ h6{
 }
 
 /* ---------------PROFILE--------------- */
-.header-image{
+.header-image {
     /* position: relative; */
-    height:400px;
+    height: 400px;
     width: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 /* .profile-image{
@@ -521,9 +524,9 @@ h6{
     height: auto;
 } */
 
-.tag-category .col-auto h3.active{
-    color: #D24848 !important; 
-    font-weight: bold; 
+.tag-category .col-auto h3.active {
+    color: #D24848 !important;
+    font-weight: bold;
 }
 
 /* Bootstrapのタブ風スタイルを全解除 */
@@ -555,94 +558,96 @@ h6{
 
 /* activeタブだけ文字色変更（例：青） */
 .custom-tabs-black .nav-link.active-tab {
-    color: #D24848 ; /* Bootstrapのprimary色 */
+    color: #D24848;
+    /* Bootstrapのprimary色 */
     font-weight: bold;
 }
 
 .custom-tabs .nav-link.active-tab {
-    color: #D24848 ; /* Bootstrapのprimary色 */
+    color: #D24848;
+    /* Bootstrapのprimary色 */
     font-weight: bold;
 }
 
 .custom-tabs-black {
-    border-bottom: 1px solid #555; 
+    border-bottom: 1px solid #555;
 }
 
 .custom-tabs {
-    border-bottom: 1px solid white; 
+    border-bottom: 1px solid white;
 }
 
 /* REVIEW PAGE */
-.table-container{
-    width:100%;    
+.table-container {
+    width: 100%;
 }
 
-.custom-table tbody tr{
-    height:50px;
+.custom-table tbody tr {
+    height: 50px;
     background-color: white;
     color: gray;
 }
 
-.custom-table tbody tr{
+.custom-table tbody tr {
     border-collapse: collapse;
     border-bottom: 1px solid gray;
 }
 
-.custom-table thead{
-    background-color: #3B3B6B ;
+.custom-table thead {
+    background-color: #3B3B6B;
     color: white;
     height: 40px;
 }
 
-.table-from{
-    width:200px;
+.table-from {
+    width: 200px;
 }
 
-.table-spot{
-    width:200px;
+.table-spot {
+    width: 200px;
 }
 
-.table-comment{
-    width:500px;
+.table-comment {
+    width: 500px;
 }
 
-.table-rating{
-    width:200px;
+.table-rating {
+    width: 200px;
 }
 
-.table-likes{
-    width:100px;
+.table-likes {
+    width: 100px;
 }
 
-.table-time{
-    width:200px;
+.table-time {
+    width: 200px;
 }
 
-.table-from-a{
-    width:900px;
+.table-from-a {
+    width: 900px;
 }
 
-.table-rating-a{
-    width:200px;
+.table-rating-a {
+    width: 200px;
 }
 
-.table-likes-a{
-    width:200px
+.table-likes-a {
+    width: 200px
 }
 
-.table-spot-a{
-    width:900px;
+.table-spot-a {
+    width: 900px;
 }
 
-.table-time-a{
-    width:400px;
+.table-time-a {
+    width: 400px;
 }
 
-.table-comment-a{
-    width:1300px;
+.table-comment-a {
+    width: 1300px;
 }
 
-.table-comment{
+.table-comment {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -650,21 +655,21 @@ h6{
     text-overflow: ellipsis;
 }
 
-thead{
-    height:50px;
+thead {
+    height: 50px;
 }
 
-.cell-short{
-    width:300px;
+.cell-short {
+    width: 300px;
 }
 
-.cell-middle{
-    width:1000px;
-    margin-right:20px;
+.cell-middle {
+    width: 1000px;
+    margin-right: 20px;
 }
 
-.cell-long{
-    width:1300px;
+.cell-long {
+    width: 1300px;
 }
 
 
@@ -677,43 +682,175 @@ thead{
     z-index: 100;
 } */
 
-.bg-navy-thead{
+.bg-navy-thead {
     background-color: #3B3B6B;
-    color:white;
+    color: white;
     border: none;
     font-weight: 600;
 }
 
-.profile-image{
-    position:relative;
+.profile-image {
+    position: relative;
 }
 
-.delete-avatar-profile{
+/* profile page responsive */
+.profile-header {
+    padding: 0 0.5rem;
+}
+
+.profile-header .btn-follow,
+.profile-header .btn-following,
+.profile-header .btn-green,
+.profile-header .btn-navy {
+    min-width: 140px;
+}
+
+
+@media (max-width: 991.98px) {
+    .profile-header {
+        padding: 0;
+    }
+
+    .header-image {
+        height: 260px;
+    }
+}
+
+/* official mark */
+.name-with-badge{
+    flex-wrap: wrap;
+}
+
+.profile-name{
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.official-personal-name{
+    width: 2.2em;
+    height: 2.2em;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+@media (max-width: 767.98px){
+    .name-with-badge{
+        justify-content: center;
+    }
+
+    .official-personal-name{
+        width: 2em;
+        height: 2em;
+    }
+}
+
+/* info */
+.profile-meta{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.profile-meta .row{
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 767.98px){
+    .profile-header{
+        text-align: center;
+    }
+
+    .profile-meta{
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-meta .row{
+        justify-content: center;
+    }
+
+    .profile-meta .col,
+    .profile-meta .col-auto,
+    .profile-meta .col-12,
+    .profile-meta .col-md-auto{
+        text-align: center;
+    }
+
+    .profile-meta a{
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header-image {
+        height: 180px;
+    }
+
+    .avatar-xxl {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .profile-xxl {
+        font-size: 7rem;
+    }
+
+    .profile-header h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .profile-header .row.align-items-center.g-2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .profile-header .btn-follow,
+    .profile-header .btn-following,
+    .profile-header .btn-green,
+    .profile-header .btn-navy {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .list-group .row.bg-white {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .img-sm {
+        width: 100%;
+        max-width: 140px;
+        height: auto;
+    }
+}
+
+.delete-avatar-profile {
     position: absolute;
     right: 0px;
-    bottom:20px;
+    bottom: 20px;
     z-index: 10px;
 }
 
-.business-main-image{
-    position:relative;
+.business-main-image {
+    position: relative;
 }
 
-.delete-business-main-image{
+.delete-business-main-image {
     position: absolute;
     left: 180px;
-    bottom:50px;
+    bottom: 50px;
     z-index: 10px;
 }
 
-.photo-preview{
-    position:relative;
+.photo-preview {
+    position: relative;
 }
 
-.delete-photo-btn{
+.delete-photo-btn {
     position: absolute;
     left: 170px;
-    bottom:50px;
+    bottom: 50px;
     z-index: 10px;
     /* padding: 0.2rem 0.4rem;  */
     /* top: 5px;
@@ -721,18 +858,22 @@ thead{
 }
 
 .delete-photo-btn i {
-    font-size: 1.2rem; /* アイコンサイズを小さめに固定 */
+    font-size: 1.2rem;
+    /* アイコンサイズを小さめに固定 */
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
+
 #app {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 main {
     flex: 1;
 }

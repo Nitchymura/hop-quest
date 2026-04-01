@@ -148,7 +148,7 @@
                 </div>
 
                 {{-- Follow Button --}}
-                @auth
+                {{-- @auth
                     @if($post->user->id !== Auth::user()->id && Auth::user()->role_id == 1)
                         <div class="col-auto pb-2 ms-auto">                        
                             <button type="button"
@@ -158,6 +158,24 @@
                                 {{ $post->user->isFollowed() ? 'Following' : 'Follow' }}
                             </button>
                         </div>
+                    @endif
+                @endauth --}}
+                                @auth
+                    @if($post['user_id'] != Auth::user()->id && Auth::user()->role_id == 1)
+                        <div class="col-12 col-md-auto p-0 mt-2 mt-md-0 ms-md-auto">
+                            @if ($post['user']->isFollowed())
+                                <form method="POST" action="{{ route('delete.follow', $post['user']->id) }}">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn-following mt-3 w-100">Following</button>
+                                </form>
+                            @else
+                                <form method="POST" action="{{ route('store.follow', $post['user']->id) }}">
+                                    @csrf
+                                    <button type="submit" class="btn-follow mt-3 w-100">Follow</button>
+                                </form>
+                            @endif
+                        </div> 
                     @endif
                 @endauth
             </div>

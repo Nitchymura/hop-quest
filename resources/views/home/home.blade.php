@@ -68,7 +68,7 @@
                 </div>
             @endif
 
-            <div class="col-auto ms-5">
+            <div class="col-auto">
                 <a href="#tab-spot" class="tab-button text-decoration-none text-dark" data-category="#tab-spot">
                     <h1 class="poppins-semibold">
                         <i class="fa-solid fa-location-dot"></i> Spot
@@ -76,7 +76,7 @@
                 </a>
             </div>
 
-            <div class="col-auto ms-5">
+            <div class="col-auto">
                 <a href="#tab-quest" class="tab-button text-decoration-none text-dark" data-category="#tab-quest">
                     <h1 class="poppins-semibold">
                         <i class="fa-solid fa-plane fa-rotate-by" style="--fa-rotate-angle: -30deg;"></i> Quest
@@ -84,7 +84,7 @@
                 </a>
             </div>
 
-            <div class="col-auto ms-5">
+            <div class="col-auto">
                 <a href="#tab-location" class="tab-button text-decoration-none text-dark" data-category="#tab-location">
                     <h1 class="poppins-semibold">
                         <i class="fa-solid fa-map"></i> Location
@@ -92,7 +92,7 @@
                 </a>
             </div>
 
-            <div class="col-auto ms-5">
+            <div class="col-auto">
                 <a href="#tab-event" class="tab-button text-decoration-none text-dark" data-category="#tab-event">
                     <h1 class="poppins-semibold">
                         <i class="fa-solid fa-calendar"></i> Event
@@ -293,7 +293,7 @@
             <div class="row body">
 
                 {{-- HopQuest Logo --}}
-                <div class="col-5 sharing-img">
+                <div class="col-12 col-xl-5 sharing-img">
                     {{-- <img src="{{ asset('images/home/オリジナル（透過背景） (1) 1.png')}}" alt="HopQuest-logo" class="hop-quest"> --}}
                 </div>
 
@@ -320,7 +320,7 @@
                         </script>
 
                 {{-- HopQuest description --}}
-                <div class="col-5 position-relative what-hop">
+                <div class="col-12 col-xl-5 position-relative what-hop">
 
                     {{-- for setting hopquest logo as background --}}
                     <div class="hopquest-logo"></div>
@@ -406,7 +406,7 @@
         </div>
 
         <div class="row justify-content-center gap-5">
-            <div class="col-2 first-question pt-5">
+            <div class="col-12 col-md-6 col-lg-4 first-question pt-4">
                 <div class="for-question d-flex gap-3">
                     <div class="for-mark ms-2">
                         <img src="{{ asset('images/home/はてなマークのアイコン素材 5.png')}}" alt="">
@@ -418,7 +418,7 @@
                 </div>
             </div>
 
-            <div class="col-2 first-question pt-4">
+            <div class="col-12 col-md-6 col-lg-4 first-question pt-4">
                 <div class="for-question-sec d-flex gap-3 mt-1">
                     <div class="for-mark-sec ms-2">
                         <img src="{{ asset('images/home/はてなマークのアイコン素材 5.png')}}" alt="">
@@ -430,7 +430,7 @@
                 </div>
             </div>
 
-            <div class="col-2 first-question pt-4">
+            <div class="col-12 col-md-6 col-lg-4 first-question pt-4">
                 <div class="for-question-sec d-flex gap-3 mt-1">
                     <div class="for-mark-sec ms-2">
                         <img src="{{ asset('images/home/はてなマークのアイコン素材 5.png')}}" alt="">

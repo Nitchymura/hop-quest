@@ -12,7 +12,7 @@
     background-color: #f5f5f5;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .main-image {
@@ -28,7 +28,7 @@
     left: 30px;
     font-size: 2.5rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .main-subtitle {
@@ -37,7 +37,7 @@
     left: 30px;
     font-size: 1.2rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .event-dates {
@@ -46,7 +46,7 @@
     left: 30px;
     font-size: 1rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .official-badge {
@@ -66,7 +66,7 @@
     background-color: white;
     padding: 20px 30px;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .profile-left {
@@ -163,7 +163,7 @@
     height: 450px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .location-map img {
@@ -178,14 +178,14 @@
     padding: 12px 25px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .info-row:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .info-label {
@@ -235,7 +235,7 @@
     background-color: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hours-table {
@@ -276,19 +276,19 @@
     }
 }
 
-.notice{
+.notice {
     font-size: 0.8rem;
 }
 
-.fs-7{
+.fs-7 {
     font-size: 0.8rem;
 }
 
-.fs-8{
+.fs-8 {
     font-size: 0.6rem;
 }
 
-.fa-heart{
+.fa-heart {
     font-size: 0.8rem;
     vertical-align: middle;
     margin-right: 5px;
@@ -373,7 +373,7 @@
     background-color: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .introduction-box p {
@@ -417,7 +417,7 @@
     background-color: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .location-section {
@@ -426,23 +426,70 @@
 }
 
 .web-social {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
+    border-radius: 12px;
+    background: #fff;
 }
 
+/* URL */
+.website-link {
+    color: #000;
+    word-break: break-all;
+}
+
+.website-link:hover {
+    text-decoration: underline;
+}
+
+/* SNSアイコン共通 */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #000;
+    background: #f5f5f5;
+    transition: all 0.2s ease;
+}
+
+/* hover */
+.social-icon:hover {
+    transform: translateY(-2px);
+}
+
+/* ブランドカラー（軽く） */
+.social-icon.instagram:hover {
+    background: #E1306C;
+    color: #fff;
+}
+
+.social-icon.facebook:hover {
+    background: #1877F2;
+    color: #fff;
+}
+
+.social-icon.x:hover {
+    background: #000;
+    color: #fff;
+}
+
+.social-icon.tiktok:hover {
+    background: #000;
+    color: #fff;
+}
 .web-social-content {
     width: 90%;
     max-width: 1400px;
     background-color: white;
     padding: 20px 30px;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1200px) {
+
     .main-image-wrapper,
     .profile-container,
     .introduction-box,
@@ -453,6 +500,7 @@
 }
 
 @media (max-width: 768px) {
+
     .main-image-wrapper,
     .profile-container,
     .introduction-box,
@@ -495,7 +543,7 @@
     background-color: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -556,8 +604,8 @@
 }
 
 .fa-circle-check,
-.fa-circle-xmark{
-    font-size:1.2rem;
+.fa-circle-xmark {
+    font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
@@ -593,10 +641,11 @@
     background-color: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 1200px) {
+
     .details-container,
     .quest-grid {
         width: 95%;
@@ -604,6 +653,7 @@
 }
 
 @media (max-width: 768px) {
+
     .details-container,
     .quest-grid {
         width: 100%;
@@ -628,43 +678,48 @@
     font-weight: 600;
 }
 
-.promotion-container {
-    width: 90%;
-    max-width: 1400px;
-    position: relative;
+.promotion-container{
+    width: 100%;
 }
 
-.promotion-carousel {
+.promotion-carousel{
     width: 100%;
     position: relative;
-    margin-bottom: 40px;
 }
 
-.carousel-items-container {
-    display: flex;
-    flex-wrap: wrap;
+.carousel-items-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
     width: 100%;
-    overflow: hidden;
-    position: relative;
-    min-height: 300px;
+    align-items: stretch;
 }
 
-.promotion-item {
-    display: none;
-    width: calc(33.33% - 20px);
-    margin: 0 10px 20px;
-    box-sizing: border-box;
-    transition: opacity 0.3s, transform 0.3s;
-    opacity: 0;
-    transform: translateY(10px);
+.promotion-item{
+    width: 100%;
+    min-width: 0;
 }
 
-.promotion-item.active {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+.promotion-item > *{
+    width: 100%;
+    height: 100%;
 }
 
+@media (max-width: 1199.98px){
+    .carousel-items-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767.98px){
+    .carousel-items-container{
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-controls{
+        display: none;
+    }
+}
 .carousel-controls {
     position: absolute;
     top: 50%;
@@ -748,13 +803,13 @@
     height: 100%;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .promotion-item .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 1200px) {
@@ -823,7 +878,7 @@
 
 .card-header {
     background-color: #f8f9fa;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .card-body {
@@ -858,7 +913,7 @@
     max-width: 1000px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 992px) {
@@ -874,11 +929,13 @@
 }
 
 .delete-photo-btn i {
-    font-size: 1.2rem; /* アイコンサイズを小さめに固定 */
+    font-size: 1.2rem;
+    /* アイコンサイズを小さめに固定 */
 }
 
 .delete-photo-btn {
-    padding: 0.2rem 0.4rem; /* ボタン自体もコンパクトに */
+    padding: 0.2rem 0.4rem;
+    /* ボタン自体もコンパクトに */
     position: absolute;
     top: 5px;
     right: 5px;
@@ -890,7 +947,7 @@
     right: 30px;
     font-size: 2rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .icon-container {
@@ -899,38 +956,41 @@
     right: 30px;
     /* font-size: 2.3rem; */
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .icon-container .icons-in-image {
     font-size: 2rem;
-    color:white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* FOR HEART, STAR ,*/
 .icon-container .fa-regular.fa-heart {
     font-size: 2rem;
-    color:white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .icon-container .fa-solid.fa-heart {
     font-size: 2rem;
     color: #D24848;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.icon-container .fa-heart :hover{
+.icon-container .fa-heart :hover {
     color: #D24848;
-    transform: scale(1.2, 1.2); 
+    transform: scale(1.2, 1.2);
 }
 
 .top-button-container {
     position: fixed;
-    bottom: 1.5rem;  /* 画面下からの距離 */
-    right: 1.5rem;   /* 画面右からの距離 */
-    z-index: 9999; /* 他の要素より上に表示 */
+    bottom: 1.5rem;
+    /* 画面下からの距離 */
+    right: 1.5rem;
+    /* 画面右からの距離 */
+    z-index: 9999;
+    /* 他の要素より上に表示 */
 }
 
 .top-button {
@@ -938,10 +998,403 @@
     border: 1px solid navy;
     padding: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 50%; /* ✅ 完全な円にする */
-    width: 70px;  /* ✅ 幅と高さを揃える */
-    height: 70px; /* ✅ 幅と高さを揃える */
+    border-radius: 50%;
+    /* ✅ 完全な円にする */
+    width: 70px;
+    /* ✅ 幅と高さを揃える */
+    height: 70px;
+    /* ✅ 幅と高さを揃える */
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.page-wrapper {
+    padding: 1rem;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== Main image ===== */
+.main-image-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.main-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.05) 45%, rgba(0, 0, 0, 0));
+}
+
+.main-title {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.main-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    align-items: center;
+}
+
+.main-stats .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.main-dates {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.main-dates h5,
+.event-dates {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.official-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 72px;
+    height: auto;
+    z-index: 2;
+}
+
+/* ===== Profile header ===== */
+.profile-header {
+    margin-top: 2rem;
+}
+
+.profile-container {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.profile-left {
+    gap: 1rem;
+}
+
+.profile-main {
+    gap: 0.75rem;
+}
+
+.profile-name a {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.sns-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.sns-icons a {
+    padding: 0.25rem;
+}
+
+/* ===== Promotion / Photo ===== */
+.promotion-container {
+    width: 100%;
+}
+
+.carousel-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.promotion-item {
+    min-width: 0;
+}
+
+/* ===== Location ===== */
+.location-wrapper {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* ===== Web & Social ===== */
+.web-social-content .row {
+    row-gap: 0.75rem;
+}
+
+/* ===== Hours table ===== */
+.hours-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.hours-table {
+    min-width: 700px;
+    width: 100%;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 767.98px) {
+    .page-wrapper {
+        padding: 0.75rem;
+        margin-top: 1rem !important;
+    }
+
+    .main-image-wrapper {
+        border-radius: 12px;
+        overflow: visible;
+        background: #fff;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    }
+
+    .main-image {
+        border-radius: 12px 12px 0 0;
+        aspect-ratio: 4 / 3;
+    }
+
+    /* スマホではオーバーレイを解除して下に並べる */
+    .main-overlay {
+        position: static;
+        background: #fff;
+        color: #222;
+        padding: 1rem;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .main-title {
+        font-size: 1.6rem;
+        color: #fff;
+        text-shadow: none;
+    }
+
+    .main-stats {
+        gap: 0.75rem 1rem;
+    }
+
+    .main-stats .stat-item {
+        font-size: 1rem;
+    }
+
+    .main-dates h5,
+    .event-dates {
+        color: #555;
+        text-shadow: none;
+        font-size: 0.95rem;
+    }
+
+    .official-badge {
+        width: 60px;
+        top: 0.75rem;
+        left: 0.75rem;
+    }
+
+    .profile-container {
+        padding: 1rem;
+    }
+
+    .profile-left {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+
+    .profile-main {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .profile-name {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    .profile-name a {
+        font-size: 1.2rem;
+    }
+
+    .profile-left .col-1,
+    .profile-left .col-auto,
+    .profile-left .me-auto {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .profile-left form .btn-follow,
+    .profile-left form .btn-following {
+        width: 100%;
+    }
+
+    .sns-icons {
+        justify-content: center;
+    }
+
+    .carousel-items-container {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .carousel-controls {
+        display: none;
+    }
+
+    .location-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .web-social-content .row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .web-social-content .col-auto {
+        width: 100%;
+    }
+}
+
+.follow-area {
+    min-width: 140px;
+}
+
+@media (max-width: 767.98px) {
+    .follow-area {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* ハートマーク */
+/* デフォルト（PC：白） */
+.main-overlay i.fa-heart {
+    color: #fff;
+}
+
+/* スマホ（黒） */
+@media (max-width: 767.98px) {
+    .main-overlay i.fa-heart {
+        color: #333;
+    }
+}
+
+/* 👍 Likeされた時（最優先） */
+.main-overlay i.fa-heart.liked {
+    color: #ff4d4d !important;
+}
+
+.stat-item i.fa-heart {
+    transition: all 0.2s ease;
+}
+
+.stat-item i.fa-heart.liked {
+    transform: scale(1.2);
+}
+
+/* ===== Business Promotion: 強制レスポンシブ表示 ===== */
+.business-promotion .promotion-container,
+.business-promotion .promotion-carousel{
+    width: 100%;
+}
+
+.business-promotion .carousel-items-container{
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 1.25rem !important;
+    width: 100% !important;
+    transform: none !important;
+    overflow: visible !important;
+}
+
+.business-promotion .promotion-item{
+    display: block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.business-promotion .promotion-item > *{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.business-promotion .promotion-item .card{
+    width: 100% !important;
+    max-width: none !important;
+    height: 100% !important;
+}
+
+.business-promotion .promotion-item .card-header{
+    height: auto !important;
+}
+
+.business-promotion .promotion-item .post-image{
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+.business-promotion .promotion-item .card-body{
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+}
+
+.business-promotion .promotion-item .card_description{
+    margin-top: 0.75rem !important;
+}
+
+.business-promotion .carousel-controls,
+.business-promotion .carousel-indicators{
+    display: none !important;
+}
+
+/* 992〜1199px では2列 */
+@media (max-width: 1199.98px){
+    .business-promotion .carousel-items-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+/* 768px未満では1列 */
+@media (max-width: 767.98px){
+    .business-promotion .carousel-items-container{
+        grid-template-columns: 1fr !important;
+    }
+
+    .business-promotion .promotion-item .post-image{
+        height: 240px !important;
+    }
 }

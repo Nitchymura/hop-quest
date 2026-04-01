@@ -8,7 +8,7 @@
 
 @section('content')
 <div class="{{ $quest_a->user->role_id === 1 ? 'bg-green' : 'bg-blue' }}">
-    <div class="container py-5 col-9 px-0">
+    <div class="container py-5 col-11 px-0">
         @php
             $hasCertifiedBusiness = $quest_a->user->role_id === 2 && $quest_a->questBodies->contains(function($body) {
                 return $body->business && $body->business->official_certification == 3;
@@ -35,7 +35,7 @@
                         <h4><i class="fa-solid fa-location-dot"></i> {{ $firstBusiness->business->name }}</h4>
                     @endif
                 </div>
-                <div class="icon-container position-absolute d-flex align-items-center mt-3 ms-5">
+                <div class="icon-container d-flex align-items-center">
                     <!-- アイコン（ハート） -->
                     <div class="me-2 mt-2">
                         @if($quest_a->isLiked())                            
