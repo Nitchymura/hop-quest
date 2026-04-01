@@ -29,8 +29,8 @@
             @endguest
             <h1 class="text-light z-1 title-text poppins-bold">Welcome to HopQuest</h1>
             <br>
-            <h2 class="text-light z-1 title-text poppins-semibold">Plan Your Next Adventure</h2>
-            <h2 class="text-light z-1 title-text poppins-semibold">Share Spots and Quests with the World</h2>
+            <h3 class="text-light z-1 title-text poppins-semibold">Plan Your Next Adventure</h3>
+            <h3 class="text-light z-1 title-text poppins-semibold">Share Your Quests with the World</h3>
         </div>
 
         <div class="btn-arrow d-flex align-items-center">

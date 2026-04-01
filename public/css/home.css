@@ -24,7 +24,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: min(90%, 700px);
-        text-align: center;
+        text-align: right;
         z-index: 2;
     }
 
@@ -58,7 +58,7 @@
             line-height: 1.2;
         }
 
-        .title h2 {
+        .title h3 {
             font-size: clamp(1.2rem, 5vw, 2rem);
             line-height: 1.3;
         }
